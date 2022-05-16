@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    gap: 0 10px;
+    padding: 15px 20px;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+
+
+}
+
+.logo__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+
+}
+
+.logo__container p {
+    font-size: 30px;
+    color: red;
+
+}
+
+.logo__container p span {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 400;
+    text-decoration: none;
+    background-image: linear-gradient(red, red);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s ease;
+}
+
+.nav-link:hover {
+    background-size: 100% 2px;
+}
+
+.hero__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(/assets/FIAT-PULSE-principal-1280x868.jpg);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+
+.hero__div {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 1.5;
+
+
+}
+
+.hero__p1 {
+    font-size: 55px;
+    color: red;
+
+}
+
+.hero__p1 span {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    
+}
+
+.hero__p2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.hero__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px black;
+    gap: 5px;
+
+
+}
+
+.hero__form input {
+    border-radius: 10px;
+    width: 80%;
+    height: 30px;
+    padding: 0px 10px;
+    border: 2px solid white;
+    background-color: transparent; 
+    color:white;
+    font-family: inherit;
+}
+
+.hero__form input::placeholder {
+    color: white;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+
+
+.hero__form textarea {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 5px;
+    text-align: center;
+    width: 80%;
+    height: 30%;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.hero__form textarea::placeholder {
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+#submit {
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    color: black;
+    font-weight: bold;
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(90deg,white, red);
+    background-size: 150%;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#submit:active {
+    background: rgba(253, 72, 72, 0.678);
+}
+
+.quienes-somos {
+    height: 40vh;
+    width: auto;
+    text-align: center;
+    padding: 50px;
+    background-color: whitesmoke;
+    font-size: 30px;
+}
+
+.section__marcas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+
+}
+
+.logo__marcas {
+    height: inherit;
+}
+
+.logo__marcas img {
+    height: inherit;
+    width: auto;
+}
